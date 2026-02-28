@@ -195,8 +195,8 @@
   <a class="nav-logo" href="#">Naomi Deokule</a>
   <div class="nav-links">
     <a href="#about">About</a>
-    <a href="#experience">Experience</a>
     <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
     <a href="#research">Research</a>
     <a href="#skills">Skills</a>
     <a href="#contact">Contact</a>
@@ -249,6 +249,92 @@
     </div>
   </div>
 </section>
+
+
+<!-- TECHNICAL PROJECTS -->
+<section class="projects-bg" id="projects">
+  <div class="label">Technical Projects</div>
+  <h2 class="h2">Things I've built</h2>
+  <div class="projects-grid">
+
+    <div class="proj dark">
+      <div>
+        <div class="proj-tag">Featured · Automation</div>
+        <h3 class="proj-title">Invoice Automation Pipeline</h3>
+        <p class="proj-desc">End-to-end AP/AR automation for finance teams. AI reads any PDF invoice, extracts structured data, creates bills in QuickBooks, emails clients, and fires payment reminders — zero manual entry.</p>
+        <div class="proj-stack">
+          <span class="s-tag">n8n</span><span class="s-tag">Claude AI</span><span class="s-tag">QuickBooks API</span><span class="s-tag">Gmail API</span><span class="s-tag">Google Sheets</span>
+        </div>
+        <p class="proj-impact">↑ Built for client deployment — eliminates 5–10 hrs/week of manual data entry per SMB finance team</p>
+      </div>
+      <div class="proj-flow">
+        <div class="flow-row"><span class="dot"></span>PDF invoice arrives via email</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-row"><span class="dot"></span>Claude AI extracts all fields</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-row"><span class="dot"></span>Bill created in QuickBooks</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-row"><span class="dot"></span>Confirmation sent to vendor</div>
+        <div class="flow-arrow">↓</div>
+        <div class="flow-row"><span class="dot"></span>Reminder fires 3 days before due</div>
+      </div>
+    </div>
+
+    <div class="proj">
+      <div class="proj-tag">AI + Full-Stack</div>
+      <h3 class="proj-title">AI Product Listing Tool</h3>
+      <p class="proj-desc">Upload a photo → Claude Vision analyzes it → generates an eBay-optimized listing and posts it live via the eBay Inventory API. Includes inquiry monitoring, email alerts, and Poshmark copy generation.</p>
+      <div class="proj-stack">
+        <span class="s-tag">Python</span><span class="s-tag">FastAPI</span><span class="s-tag">Claude Vision</span><span class="s-tag">eBay API</span><span class="s-tag">SQLite</span>
+      </div>
+      <p class="proj-impact">↑ Cuts listing time from 15 min → 30 seconds</p>
+    </div>
+
+    <div class="proj">
+      <div class="proj-tag">Browser Automation</div>
+      <h3 class="proj-title">Poshmark Autofill Extension</h3>
+      <p class="proj-desc">Chrome extension that replicates the core feature of Vendoo ($20/mo) — auto-fills Poshmark's listing form using content scripts, background service workers, and cross-origin image fetching.</p>
+      <div class="proj-stack">
+        <span class="s-tag">Chrome MV3</span><span class="s-tag">JavaScript</span><span class="s-tag">Service Workers</span><span class="s-tag">DOM Automation</span>
+      </div>
+      <p class="proj-impact">↑ Replicates paid SaaS functionality at zero cost</p>
+    </div>
+
+    <div class="proj">
+      <div class="proj-tag">Scraper · CRM Automation</div>
+      <h3 class="proj-title">Indo-Western Influencer Scraper & CRM</h3>
+      <p class="proj-desc">Built for Project Tasveer — scrapes Instagram for Indo-Western fashion influencers, scores them by fit and engagement, auto-populates a CRM, and triggers personalized outreach sequences. Zero manual sourcing.</p>
+      <div class="proj-stack">
+        <span class="s-tag">Python</span><span class="s-tag">Web Scraping</span><span class="s-tag">n8n</span><span class="s-tag">Airtable</span><span class="s-tag">Gmail API</span>
+      </div>
+      <p class="proj-impact">↑ Automated full influencer pipeline from discovery to outreach</p>
+    </div>
+
+    <div class="proj">
+      <div class="proj-tag">Creative · Photography</div>
+      <h3 class="proj-title">Photography Portfolio</h3>
+      <p class="proj-desc">Professional photography portfolio spanning events, non-profits, healthcare, and editorial work. Work exhibited at the San Diego Museum of Contemporary Art and the SD Museum of Modern Art.</p>
+      <div class="proj-stack">
+        <span class="s-tag">Portrait</span><span class="s-tag">Editorial</span><span class="s-tag">Non-profit</span><span class="s-tag">Events</span>
+      </div>
+      <p class="proj-impact">↑ Exhibited at SDMCA & SD Museum of Modern Art</p>
+      <a href="https://nsd323.wixsite.com/naomi-deokule" target="_blank" class="btn btn-outline" style="margin-top:16px;font-size:11px">View Portfolio →</a>
+    </div>
+
+    <div class="proj" style="background:#F2EBE1; grid-column: span 2;">
+      <div class="proj-tag">Founder · E-commerce</div>
+      <h3 class="proj-title">Project Tasveer — Brand & Commerce Platform</h3>
+      <p class="proj-desc" style="max-width:640px">Built the full GTM stack for an impact-driven South Asian fashion brand from the ground up: e-commerce website, brand identity, social commerce strategy, fundraising campaigns, and NGO partnerships. $10K+ raised for women artisans in India.</p>
+      <div class="proj-stack">
+        <span class="s-tag">Brand Strategy</span><span class="s-tag">E-commerce</span><span class="s-tag">GTM</span><span class="s-tag">Social Commerce</span><span class="s-tag">Web Design</span>
+      </div>
+      <p class="proj-impact">↑ 0 → 1 brand built end-to-end, global NGO partnerships</p>
+      <a href="https://www.projecttasveer.org" target="_blank" class="btn btn-terra" style="margin-top:16px;font-size:11px">Visit projecttasveer.org →</a>
+    </div>
+
+  </div>
+</section>
+
 
 <!-- EXPERIENCE -->
 <section id="experience">
@@ -388,90 +474,6 @@
           <li><strong>Received a Special Commendation from the San Diego City Council</strong> for community impact.</li>
         </ul>
       </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- TECHNICAL PROJECTS -->
-<section class="projects-bg" id="projects">
-  <div class="label">Technical Projects</div>
-  <h2 class="h2">Things I've built</h2>
-  <div class="projects-grid">
-
-    <div class="proj dark">
-      <div>
-        <div class="proj-tag">Featured · Automation</div>
-        <h3 class="proj-title">Invoice Automation Pipeline</h3>
-        <p class="proj-desc">End-to-end AP/AR automation for finance teams. AI reads any PDF invoice, extracts structured data, creates bills in QuickBooks, emails clients, and fires payment reminders — zero manual entry.</p>
-        <div class="proj-stack">
-          <span class="s-tag">n8n</span><span class="s-tag">Claude AI</span><span class="s-tag">QuickBooks API</span><span class="s-tag">Gmail API</span><span class="s-tag">Google Sheets</span>
-        </div>
-        <p class="proj-impact">↑ Eliminates 5–10 hrs/week of manual data entry per client</p>
-      </div>
-      <div class="proj-flow">
-        <div class="flow-row"><span class="dot"></span>PDF invoice arrives via email</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-row"><span class="dot"></span>Claude AI extracts all fields</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-row"><span class="dot"></span>Bill created in QuickBooks</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-row"><span class="dot"></span>Confirmation sent to vendor</div>
-        <div class="flow-arrow">↓</div>
-        <div class="flow-row"><span class="dot"></span>Reminder fires 3 days before due</div>
-      </div>
-    </div>
-
-    <div class="proj">
-      <div class="proj-tag">AI + Full-Stack</div>
-      <h3 class="proj-title">AI Product Listing Tool</h3>
-      <p class="proj-desc">Upload a photo → Claude Vision analyzes it → generates an eBay-optimized listing and posts it live via the eBay Inventory API. Includes inquiry monitoring, email alerts, and Poshmark copy generation.</p>
-      <div class="proj-stack">
-        <span class="s-tag">Python</span><span class="s-tag">FastAPI</span><span class="s-tag">Claude Vision</span><span class="s-tag">eBay API</span><span class="s-tag">SQLite</span>
-      </div>
-      <p class="proj-impact">↑ Cuts listing time from 15 min → 30 seconds</p>
-    </div>
-
-    <div class="proj">
-      <div class="proj-tag">Browser Automation</div>
-      <h3 class="proj-title">Poshmark Autofill Extension</h3>
-      <p class="proj-desc">Chrome extension that replicates the core feature of Vendoo ($20/mo) — auto-fills Poshmark's listing form using content scripts, background service workers, and cross-origin image fetching.</p>
-      <div class="proj-stack">
-        <span class="s-tag">Chrome MV3</span><span class="s-tag">JavaScript</span><span class="s-tag">Service Workers</span><span class="s-tag">DOM Automation</span>
-      </div>
-      <p class="proj-impact">↑ Replicates paid SaaS functionality at zero cost</p>
-    </div>
-
-    <div class="proj">
-      <div class="proj-tag">Scraper · CRM Automation</div>
-      <h3 class="proj-title">Indo-Western Influencer Scraper & CRM</h3>
-      <p class="proj-desc">Built for Project Tasveer — scrapes Instagram for Indo-Western fashion influencers, scores them by fit and engagement, auto-populates a CRM, and triggers personalized outreach sequences. Zero manual sourcing.</p>
-      <div class="proj-stack">
-        <span class="s-tag">Python</span><span class="s-tag">Web Scraping</span><span class="s-tag">n8n</span><span class="s-tag">Airtable</span><span class="s-tag">Gmail API</span>
-      </div>
-      <p class="proj-impact">↑ Automated full influencer pipeline from discovery to outreach</p>
-    </div>
-
-    <div class="proj">
-      <div class="proj-tag">Creative · Photography</div>
-      <h3 class="proj-title">Photography Portfolio</h3>
-      <p class="proj-desc">Professional photography portfolio spanning events, non-profits, healthcare, and editorial work. Work exhibited at the San Diego Museum of Contemporary Art and the SD Museum of Modern Art.</p>
-      <div class="proj-stack">
-        <span class="s-tag">Portrait</span><span class="s-tag">Editorial</span><span class="s-tag">Non-profit</span><span class="s-tag">Events</span>
-      </div>
-      <p class="proj-impact">↑ Exhibited at SDMCA & SD Museum of Modern Art</p>
-      <a href="https://nsd323.wixsite.com/naomi-deokule" target="_blank" class="btn btn-outline" style="margin-top:16px;font-size:11px">View Portfolio →</a>
-    </div>
-
-    <div class="proj" style="background:#F2EBE1; grid-column: span 2;">
-      <div class="proj-tag">Founder · E-commerce</div>
-      <h3 class="proj-title">Project Tasveer — Brand & Commerce Platform</h3>
-      <p class="proj-desc" style="max-width:640px">Built the full GTM stack for an impact-driven South Asian fashion brand from the ground up: e-commerce website, brand identity, social commerce strategy, fundraising campaigns, and NGO partnerships. $10K+ raised for women artisans in India.</p>
-      <div class="proj-stack">
-        <span class="s-tag">Brand Strategy</span><span class="s-tag">E-commerce</span><span class="s-tag">GTM</span><span class="s-tag">Social Commerce</span><span class="s-tag">Web Design</span>
-      </div>
-      <p class="proj-impact">↑ 0 → 1 brand built end-to-end, global NGO partnerships</p>
-      <a href="https://www.projecttasveer.org" target="_blank" class="btn btn-terra" style="margin-top:16px;font-size:11px">Visit projecttasveer.org →</a>
     </div>
 
   </div>
